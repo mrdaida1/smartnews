@@ -57,8 +57,8 @@ platforms:
   sources:
     - id: "toutiao"
       name: "今日头条"
-    - id: "baidu"
-      name: "百度热搜"
+    #- id: "baidu"
+    #  name: "百度热搜"
     - id: "wallstreetcn-hot"
       name: "华尔街见闻"
     #- id: "thepaper"
@@ -67,12 +67,12 @@ platforms:
     #  name: "bilibili 热搜"
     - id: "cls-hot"
       name: "财联社热门"
-    - id: "ifeng"
-      name: "凤凰网"
+    #- id: "ifeng"
+    #  name: "凤凰网"
     #- id: "tieba"
     #  name: "贴吧"
-    - id: "weibo"
-      name: "微博"
+    #- id: "weibo"
+    #  name: "微博"
     #- id: "douyin"
     #  name: "抖音"
     - id: "zhihu"
@@ -501,16 +501,16 @@ advanced:
   # 排序权重（用于重新排序不同平台的热搜）
   # 合起来等于 1
   weight:
-    rank: 0.4                         # 排名权重
+    rank: 0.5                         # 排名权重
     frequency: 0.3                    # 频次权重
-    hotness: 0.3                      # 热度权重
+    hotness: 0.2                      # 热度权重
 
   # 多账号限制
   max_accounts_per_channel: 3         # 每个渠道最大账号数量
 
   # 消息分批大小（字节）- 内部配置，请勿修改
   batch_size:
-    default: 4000
+    default: 6000
     dingtalk: 20000
     feishu: 30000
     bark: 4000
